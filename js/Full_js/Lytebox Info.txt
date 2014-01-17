@@ -1,0 +1,24 @@
+Lytebox can be configured by editing the main JavaScript file, lytebox.js. Shown below are the lines in lytebox.js which are configurable. The comments (text following the "//" characters) are fairly self-explanatory, so I won't go into any further detail.
+
+/*** Start Global Configuration ***/
+    this.theme            = 'grey'; // themes: grey (default), red, green, blue, gold
+    this.hideFlash        = true;   // controls whether or not Flash objects should be hidden
+    this.outerBorder      = false;  // controls whether to show the outer grey (or theme) border
+    this.resizeSpeed      = 8;      // controls the speed of the image resizing (1=slowest and 10=fastest)
+    this.maxOpacity       = 80;     // higher opacity = darker overlay, lower opacity = lighter overlay
+    this.navType          = 1;      // 1 = "Prev/Next" buttons on top left and left (default), 2 = "<< prev | next >>" links next to image number
+    this.autoResize       = true;   // controls whether or not images should be resized if larger than the browser window dimensions
+    this.doAnimations     = true;   // controls whether or not "animate" Lytebox, i.e. resize transition between images, fade in/out effects, etc.
+    this.borderSize       = 12;     // if you adjust the padding in the CSS, you will need to update this variable -- otherwise, leave this alone...
+/*** End Global Configuration ***/
+
+/*** Configure Slideshow Options ***/
+    this.slideInterval    = 10000;  // Change value (milliseconds) to increase/decrease the time between "slides" (10000 = 10 seconds)
+    this.showNavigation   = true;   // true to display Next/Prev buttons/text during slideshow, false to hide
+    this.showClose        = true;   // true to display the Close button, false to hide
+    this.showDetails      = true;   // true to display image details (caption, count), false to hide
+    this.showPlayPause    = true;   // true to display pause/play buttons next to close button, false to hide
+    this.autoEnd          = true;   // true to automatically close Lytebox after the last image is reached, false to keep open
+    this.pauseOnNextClick = false;  // true to pause the slideshow when the "Next" button is clicked
+    this.pauseOnPrevClick = true;   // true to pause the slideshow when the "Prev" button is clicked
+/*** End Slideshow Configuration ***/
